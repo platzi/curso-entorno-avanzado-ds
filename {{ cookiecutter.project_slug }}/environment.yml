@@ -1,0 +1,12 @@
+# conda env create --file environment.yml
+name: {{ cookiecutter.project_slug }}
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  {% if cookiecutter.project_packages == "All" -%}
+  - jupyter
+  - jupyterlab
+  {% endif -%}
+  - python={{ cookiecutter.python_version }}
