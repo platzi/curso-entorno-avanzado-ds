@@ -1,0 +1,21 @@
+# conda env create --file environment.yml
+# mamba env create --file environment.yml
+name: final_project
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - invoke
+  - jupyter
+  - jupyterlab
+  - matplotlib
+  - nbdime
+  - numpy
+  - pandas
+  - pip
+  - plotly
+  - pyprojroot
+  - python=3.9
+  - seaborn
+  
