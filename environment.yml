@@ -1,0 +1,16 @@
+# conda env create --file environment.yml
+name: paths_management_platzi
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - fs
+  - jupyter
+  - jupyterlab
+  - pathlib
+  - pip
+  - pyprojroot
+  - python=3.9
+  - pip:
+    - pyhere
