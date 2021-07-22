@@ -6,7 +6,18 @@ channels:
   - defaults
 dependencies:
   {% if cookiecutter.project_packages == "All" -%}
+  - fs
   - jupyter
   - jupyterlab
+  - pathlib
+  {% endif -%}
+  - pip
+  - python={{ cookiecutter.python_version }}
+  {% if cookiecutter.project_packages == "All" -%}
+  - pyprojroot
   {% endif -%}
   - python={{ cookiecutter.python_version }}
+  - pip:
+    {% if cookiecutter.project_packages == "All" -%}
+    - pyhere
+    {% endif -%}
