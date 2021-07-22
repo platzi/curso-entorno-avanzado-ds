@@ -12,7 +12,6 @@ dependencies:
   - pathlib
   {% endif -%}
   - pip
-  - python={{ cookiecutter.python_version }}
   {% if cookiecutter.project_packages == "All" -%}
   - pyprojroot
   {% endif -%}
